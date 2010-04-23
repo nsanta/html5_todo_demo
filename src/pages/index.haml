@@ -1,0 +1,24 @@
+- @layout = "application"
+- @page_title = "Homepage"
+- @body_class = "homepage"
+- @page_description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do."
+
+%h1 TODO TASK LIST DEMO
+
+
+.task_form
+  %form#task_form{:action => '#'} 
+    .field
+      %label Name
+      = text_field :name , ""
+    .field
+      %label description
+      = text_area :description  , ""
+    .button
+      %input{:type => 'submit' , :value => 'Add Task '}
+.task_list
+  %h1 Available Tasks
+  .content
+.tasks_done
+  %h1 Tasks Done
+  .content

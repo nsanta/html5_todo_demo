@@ -1,0 +1,11 @@
+%title
+  = page_title
+- if @page_description
+  %meta{:name => "description", :content => @page_description}
+= stylesheets :site
+= stylesheets :print
+= stylesheets :ie
+-# jquery_tools format options 'default', 'full' or 'jquery'
+= jquery_tools('default')
+= javascripts('persistence' , 'config/init' , 'models/task')
+= javascripts('application')
